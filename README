@@ -1,0 +1,1 @@
+Basic mysql health check and return http status 200 or 500 depends on the test result.
