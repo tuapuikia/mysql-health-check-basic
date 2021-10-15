@@ -12,8 +12,4 @@ FROM alpine:latest
 
 COPY --from=builder /opt/builder/mysql-go /usr/local/bin/mysql-go
 
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-
-USER appuser
-
 ENTRYPOINT ["/usr/local/bin/mysql-go"]
